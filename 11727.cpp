@@ -15,7 +15,7 @@ int main()
 
 	for (int i = 3; i <= N; i++)
 	{
-		DP[i] = (DP[i - 1] + 2*DP[i - 2])%10007;
+		DP[i] = (DP[i - 1] + 2*DP[i - 2]) % 10007;
 	}
 
 	cout << DP[N];
