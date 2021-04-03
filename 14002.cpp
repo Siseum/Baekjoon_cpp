@@ -7,8 +7,8 @@ using namespace std;
 int N;
 int Input[1001];
 int dp[1001];
-vector<int> tempt[1001]; // 매번 새로 갱신할려고 하는것보다 
-vector<int> Result;      // 여러가지 후보군을 저장해 놓은뒤 그중 하나를 고르는것이 더 쉽다 
+vector<int> tempt[1001];  // 매번 새로 갱신할려고 하는것보다 
+vector<int> Result;       // 여러가지 후보군을 저장해 놓은뒤 그중 하나를 고르는것이 더 쉽다 
 
 
 int main()
