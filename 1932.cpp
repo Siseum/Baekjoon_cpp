@@ -27,13 +27,19 @@ int main()
 		for (int j = 1; j <= i; j++)
 		{
 			if (j == 1)
+			{
 				dp[i][j] = dp[i - 1][j] + arr[i][j];
+			}
 
 			else if (j == i)
+			{
 				dp[i][j] = dp[i - 1][j - 1] + arr[i][j];
+			}
 
 			else
+			{
 				dp[i][j] = max(dp[i - 1][j - 1], dp[i - 1][j]) + arr[i][j];
+			}
 
 			Result = max(Result, dp[i][j]);
 		}
