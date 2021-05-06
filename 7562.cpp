@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <memory.h>
 #include <algorithm>
 
 using namespace std;
@@ -67,11 +68,7 @@ int main()
 		cin >> s_i >> s_j;
 		cin >> e_i >> e_j;
 
-		for (int j = 0; j < 300; j++)
-		{
-			for (int k = 0; k < 300; k++)
-				visit[j][k] = false;
-		}
+		memset(visit, false, sizeof(visit));
 
 		que.push(pair<int, int>(s_i, s_j));
 		que_count.push(0);
